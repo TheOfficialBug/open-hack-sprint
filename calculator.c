@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-/*Function declarations for calculator*/
-
 float add(float num1, float num2);
 float sub(float num1, float num2);
 float mult(float num1, float num2);
@@ -40,9 +38,9 @@ int main()
             break;
 
         case '%':
-            n1=(int)num1;
-            diff=num1-n1
-            n2=(int)num2;
+            n1 = (int)num1;
+            diff = num1 - n1
+            n2 = (int)num2;
             result = modulus(num1, num2);
             break;
 
@@ -57,15 +55,12 @@ int main()
 
 
 /*Function to add two numbers*/
-
 float add(float num1, float num2)
 {
     return num1 + num2;
 }
 
-/**
- * Function to subtract two numbers
- */
+/* Function to subtract two numbers */
  float sub(float num1, float num2)
 {
     return num1 - num2;
@@ -83,7 +78,8 @@ float div(float num1, float num2)
     return num1 / num2;
 }
 
+/* Function for modulus of two numbers */
 float modulus(int n1, int n2)
 {
-    return n1%n2;
+    return n1 % n2;
 }
